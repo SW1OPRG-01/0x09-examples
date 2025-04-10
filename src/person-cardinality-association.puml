@@ -1,0 +1,25 @@
+@startuml person-cardinality-association
+skinparam ClassAttributeIconSize 0
+hide circle
+
+Person "*" <-- "1" DateOfBirth
+
+class Person {
+  - name: string
+  
+  + Person(name: string)
+  + print(): void
+  + setName(name: string): void
+  + getName(): string
+}
+
+class DateOfBirth {
+  - year: int
+  - month: int
+  - day: int
+
+  + DateOfBirth(year: int, month: int, day: int)
+  + printDateOfBirth(): void
+}
+
+@enduml

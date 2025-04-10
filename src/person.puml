@@ -1,0 +1,12 @@
+@startuml person
+hide circle
+skinparam classAttributeIconSize 0
+
+class Person {
+  - name : std::string
+  + Person(name : std::string)
+  + setName(name : std::string) : void
+  + getName() : std::string
+}
+
+@enduml

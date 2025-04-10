@@ -1,0 +1,16 @@
+@startuml address
+hide circle
+skinparam ClassAttributeIconSize 0
+
+class Address {
+  - streetName: string
+  - streetNumber: string
+  - zipCode: int
+  + Address(streetName: string, streetNumber: string, zipCode: int)
+  + print(): void
+  + getStreetName(): string
+  + getStreetNumber(): string
+  + getZipcode(): string
+}
+
+@enduml

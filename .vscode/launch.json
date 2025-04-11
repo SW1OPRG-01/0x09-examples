@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "Build and Run",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/person",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "windows": {
+        "MIMode": "gdb"
+      },
+      "osx": {
+        "MIMode": "lldb",
+      },
+      "preLaunchTask": "build"
+    }
+  ],
+  "version": "2.0.0"
+}
